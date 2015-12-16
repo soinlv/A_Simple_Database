@@ -72,6 +72,7 @@ public class Db {
 		return true;
 	}
 	//process the command
+	//TODO: Use lambda to process the commands.
 	public boolean command_process(String cmd) {
 		String[] command = cmd.split("\\s");
 		int len = command.length;
