@@ -7,19 +7,26 @@ In the Simple Database problem, you'll implement an in-memory database similar t
 
 ###Guidelines
 
-This problem should take you between 30 and 90 minutes.
-We recommend that you use a high-level language, like Python, Go, Haskell, Ruby, or Java. We're much more interested in seeing clean code and good algorithmic performance than raw throughput.
-It is very helpful to the engineers who grade these challenges if you reduce external dependencies, make compiling your code as simple as possible, and include instructions for compiling and/or running your code directly from the command line, without the use of an IDE.
-Your submission must comply with the input/output formats and performance requirements specified below.
++ This problem should take you between 30 and 90 minutes.
+
++ We recommend that you use a high-level language, like Python, Go, Haskell, Ruby, or Java. We're much more interested in seeing clean code and good algorithmic performance than raw throughput.
+
++ It is very helpful to the engineers who grade these challenges if you reduce external dependencies, make compiling your code as simple as possible, and include instructions for compiling and/or running your code directly from the command line, without the use of an IDE.
+
++ Your submission must comply with the input/output formats and performance requirements specified below.
 
 ###Data Commands
 
 Your database should accept the following commands:
-SET name value – Set the variable name to the value value. Neither variable names nor values will contain spaces.
-GET name – Print out the value of the variable name, or NULL if that variable is not set.
-UNSET name – Unset the variable name, making it just like that variable was never set.
-NUMEQUALTO value – Print out the number of variables that are currently set to value. If no variables equal that value, print 0.
-END – Exit the program. Your program will always receive this as its last command.
++ SET *name value* – Set the variable *name* to the value *value*. Neither variable names nor values will contain spaces.
+
++ GET *name* – Print out the value of the variable *name*, or NULL if that variable is not set.
+
++ UNSET *name* – Unset the variable *name*, making it just like that variable was never set.
+
++ NUMEQUALTO *value* – Print out the number of variables that are currently set to *value*. If no variables equal that value, print 0.
+
++ END – Exit the program. Your program will always receive this as its last command.
 Commands will be fed to your program one at a time, with each command on its own line. Any output that your program generates should end with a newline character. Here are some example command sequences:
 
 |INPUT   |OUTPUT |
@@ -114,4 +121,5 @@ The gray text is what we've typed in to the program and the red text is the prog
 
 ###Performance Requirements
 + All of the following commands BEGIN, GET, SET, UNSET, and NUMEQUALTO should have an average-case runtime of O(log N) or better, where N is the total number of variables stored in the database.
+
 + The vast majority of transactions will only update a small number of variables. Accordingly, your solution should be efficient about how much memory each transaction uses.
