@@ -104,7 +104,11 @@ Any data command that is run outside of a transaction block should commit immedi
 Your program should expect input from standard input (stdin) and handle EOF. Below are two examples of ways we might test your program.
 
 + Pass a file of commands to standard input:
+
+ ![alt text](https://github.com/soinlv/A_Simple_Database/blob/master/images/i1.gif "image 1")
 + Run the program interactively:
+
+ ![alt text](https://github.com/soinlv/A_Simple_Database/blob/master/images/i2.gif "image 2")
 
 The gray text is what we've typed in to the program and the red text is the program output. Please note that you do not need to implement any sort of text coloring. The different colors shown here are merely to help you distinguish between input and output.
 
