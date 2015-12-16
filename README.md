@@ -49,7 +49,9 @@ Commands will be fed to your program one at a time, with each command on its own
 
 ###Transaction Commands
 + **BEGIN** – Open a new transaction block. Transaction blocks can be nested; a **BEGIN** can be issued inside of an existing block.
+
 + **ROLLBACK** – Undo all of the commands issued in the *most recent* transaction block, and close the block. Print nothing if successful, or print **NO TRANSACTION** if no transaction is in progress.
+
 + **COMMIT**– Close *all* open transaction blocks, permanently applying the changes made in them. Print nothing if successful, or print **NO TRANSACTION** if no transaction is in progress.
 
 Any data command that is run outside of a transaction block should commit immediately. Here are some example command sequences:
